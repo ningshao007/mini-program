@@ -3,4 +3,4 @@ export default {
   navigationBarTextStyle: 'white',
   navigationBarTitleText: '订单详情',
   enableShareAppMessage: true,
-}
+};

@@ -6,20 +6,18 @@ export default {
     'pages/airportList/airportList',
     'pages/calendar/calendar',
   ],
+  // 分包
   subPackages: [
     {
-      root: "pages/flight",
-      pages: [
-        "list/list",
-        "detail/detail"
-      ]
+      root: 'pages/flight',
+      pages: ['list/list', 'detail/detail'],
     },
   ],
   window: {
     backgroundTextStyle: 'light',
     navigationBarBackgroundColor: '#fff',
     navigationBarTitleText: '远方',
-    navigationBarTextStyle: 'black'
+    navigationBarTextStyle: 'black',
   },
   tabBar: {
     color: '#7F8389',
@@ -39,11 +37,11 @@ export default {
         selectedIconPath: 'assets/images/order-selected.png',
         text: '我的订单',
       },
-    ]
+    ],
   },
-  "permission": {
-    "scope.userLocation": {
-      "desc": "为了更好的服务体验，我们希望获取你的位置"
-    }
-  }
-}
+  permission: {
+    'scope.userLocation': {
+      desc: '为了更好的服务体验，我们希望获取你的位置',
+    },
+  },
+};
